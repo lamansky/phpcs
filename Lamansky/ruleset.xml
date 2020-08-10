@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Lamansky" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+  <arg name="tab-width" value="4"/>
+  <rule ref="PSR1"/>
+  <rule ref="Generic.Arrays.ArrayIndent">
+    <properties>
+      <property name="indent" value="4"/>
+    </properties>
+  </rule>
+  <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+  <rule ref="Generic.Classes.DuplicateClassName"/>
+  <rule ref="Generic.Classes.OpeningBraceSameLine"/>
+  <rule ref="Generic.CodeAnalysis.AssignmentInCondition"/>
+  <rule ref="Generic.CodeAnalysis.EmptyPHPStatement"/>
+  <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+  <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+  <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
+  <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+  <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+  <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+  <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+  <rule ref="Generic.Commenting.Todo"/>
+  <rule ref="Generic.ControlStructures.DisallowYodaConditions"/>
+  <rule ref="Generic.ControlStructures.InlineControlStructure"/>
+  <rule ref="Generic.Files.EndFileNewline"/>
+  <rule ref="Generic.Files.ExecutableFile"/>
+  <rule ref="Generic.Files.LineEndings">
+    <properties>
+      <property name="eolChar" value="\n"/>
+    </properties>
+  </rule>
+  <rule ref="Generic.Files.OneObjectStructurePerFile"/>
+  <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+  <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
+  <rule ref="Generic.Formatting.SpaceAfterNot">
+    <properties>
+      <property name="spacing" value="0"/>
+    </properties>
+  </rule>
+  <rule ref="Generic.Functions.CallTimePassByReference"/>
+  <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+  <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+  <rule ref="Generic.PHP.BacktickOperator"/>
+  <rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/>
+  <rule ref="Generic.PHP.DeprecatedFunctions"/>
+  <rule ref="Generic.PHP.DisallowRequestSuperglobal"/>
+  <rule ref="Generic.PHP.ForbiddenFunctions">
+    <properties>
+      <property name="forbiddenFunctions" type="array">
+        <element key="sizeof" value="count"/>
+        <element key="delete" value="unset"/>
+        <element key="print" value="echo"/>
+        <element key="create_function" value="null"/>
+        <element key="error_log" value="null"/>
+        <element key="var_dump" value="null"/>
+      </property>
+    </properties>
+  </rule>
+  <rule ref="Generic.PHP.LowerCaseConstant"/>
+  <rule ref="Generic.PHP.LowerCaseKeyword"/>
+  <rule ref="Generic.PHP.LowerCaseType"/>
+  <rule ref="Generic.PHP.Syntax"/>
+  <rule ref="Generic.Strings.UnnecessaryStringConcat">
+    <properties>
+      <property name="allowMultiline" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+  <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
+  <rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="4"/>
+    </properties>
+  </rule>
+  <rule ref="Generic.WhiteSpace.SpreadOperatorSpacingAfter"/>
+  <rule ref="PEAR.Commenting.InlineComment"/>
+  <rule ref="PEAR.ControlStructures.MultiLineCondition"/>
+  <rule ref="PEAR.Files.IncludingFile"/>
+  <rule ref="PSR12.Classes.ClassInstantiation"/>
+  <rule ref="PSR12.Classes.ClosingBrace"/>
+  <rule ref="PSR12.Files.OpenTag"/>
+  <rule ref="PSR12.Functions.NullableTypeDeclaration"/>
+  <rule ref="PSR12.Keywords.ShortFormTypeKeywords"/>
+  <rule ref="PSR12.Operators.OperatorSpacing"/>
+  <rule ref="PSR12.Properties.ConstantVisibility"/>
+  <rule ref="PSR2.Classes.PropertyDeclaration"/>
+  <rule ref="PSR2.ControlStructures.ControlStructureSpacing"/>
+  <rule ref="PSR2.ControlStructures.ElseIfDeclaration"/>
+  <rule ref="PSR2.ControlStructures.SwitchDeclaration">
+    <properties>
+      <property name="indent" value="4"/>
+    </properties>
+  </rule>
+  <rule ref="PSR2.Files.ClosingTag"/>
+  <rule ref="PSR2.Methods.FunctionCallSignature">
+    <properties>
+      <property name="indent" value="4"/>
+    </properties>
+  </rule>
+  <rule ref="PSR2.Methods.FunctionClosingBrace"/>
+  <rule ref="PSR2.Methods.MethodDeclaration"/>
+  <rule ref="PSR2.Namespaces.UseDeclaration"/>
+  <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+  <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+  <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+    <properties>
+      <property name="searchAnnotations" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+  <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing">
+    <properties>
+      <property name="spacesCountBeforeColon" value="1"/>
+    </properties>
+  </rule>
+  <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
+    <properties>
+      <property name="ignoreUnusedValuesWhenOnlyKeysAreUsedInForeach" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="Squiz.Classes.ClassFileName"/>
+  <rule ref="Squiz.Commenting.BlockComment">
+    <exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
+  </rule>
+  <rule ref="Squiz.Commenting.DocCommentAlignment"/>
+  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
+  <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
+  <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
+    <properties>
+      <property name="equalsSpacing" value="1"/>
+    </properties>
+  </rule>
+  <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
+  <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
+  <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+  <rule ref="Squiz.PHP.NonExecutableCode"/>
+  <rule ref="Squiz.Scope.MethodScope"/>
+  <rule ref="Squiz.Scope.StaticThisUsage"/>
+  <rule ref="Squiz.Strings.DoubleQuoteUsage">
+    <exclude name="Squiz.Strings.DoubleQuoteUsage.ContainsVar"/>
+  </rule>
+  <rule ref="Squiz.Strings.EchoedStrings"/>
+  <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+  <rule ref="Squiz.WhiteSpace.ControlStructureSpacing">
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.NoLineAfterClose"/>
+    <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.LineAfterClose"/>
+  </rule>
+  <rule ref="Squiz.WhiteSpace.FunctionOpeningBraceSpace"/>
+  <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
+    <properties>
+      <property name="ignoreNewlines" value="true"/>
+    </properties>
+  </rule>
+  <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
+  <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+  <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+</ruleset>

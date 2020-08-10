@@ -1,0 +1,28 @@
+{
+  "name": "lamansky/phpcs",
+  "description": "An opinionated PHP code standard that mostly tries to make sure your PHP doesn’t look too different from other languages in your project.",
+  "type": "phpcodesniffer-standard",
+  "keywords": [
+    "PHP_CodeSniffer",
+    "ruleset",
+    "sniffs",
+    "function",
+    "space",
+    "return type",
+    "typehint",
+    "declaration"
+  ],
+  "homepage": "https://github.com/lamansky/phpcs",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Fr. John Lamansky",
+      "homepage": "https://lamansky.com"
+    }
+  ],
+  "require": {
+    "squizlabs/php_codesniffer": "^3.5.5",
+    "slevomat/coding-standard": "^6.3.10",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+  }
+}
